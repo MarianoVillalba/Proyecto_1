@@ -1,0 +1,190 @@
+/* Estilo global para el HTML y el cuerpo del documento */
+html, body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #215F96, #8A2BE2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #f5f5dc;
+}
+
+
+body 
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos para el encabezado y pie de página */
+header, footer
+ {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo para los enlaces de navegación */
+nav a 
+{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para los encabezados */
+h1, h2 
+{
+    text-shadow: -5px -5px 5px #aaa;
+    text-align: center;
+    color: #f5f5dc;
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main 
+{
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para la etiqueta de selección */
+label 
+{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+select
+ {      
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px #aaa;;
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+/* Estilo para el contenedor de la cuadrícula */
+.grid-container
+ {
+    border-radius: 20px;
+    box-shadow: -6px -6px 7px #e0ffd8,
+               6px  6px 7px #e0ffd8;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajustar el ancho mínimo y máximo de las columnas */
+    grid-gap: 20px;
+    width: 90%; /* Reducir el ancho para que se ajuste mejor en la página */
+    margin: 0 auto; /* Centrar el contenedor */
+
+}
+
+/* Estilos para los artículos de la cuadrícula */
+.grid-item
+ {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    transition-property: width, background-color;
+    transition-duration: 1s, 1s;
+    transition-timing-function: linear, linear;
+    transition-delay: 0s, 0s;
+
+}
+
+.grid-item:hover
+ {
+    transform: translateY(-5px); /* Agregar efecto de elevación al pasar el cursor sobre el artículo */
+    width:300px;
+    background-color:#007b7d;
+}
+
+.grid-item h2
+ {
+    margin-top: 0;
+    color: #000;
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.grid-item p
+ {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    color: #333; /* Cambiar el color del texto para hacerlo más legible */
+}
+
+.grid-item img 
+{
+    border-radius: 10px;
+    max-width: 100%; /* Asegurar que las imágenes no se salgan del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+/* Estilo para los elementos horizontales */
+hr 
+{
+    width: 100%;
+    border: 1px solid #f5f5dc;
+    margin: 20px 0;
+}
+form 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form textarea 
+{
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+button 
+{
+    display: flex;
+    width: 100px;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition:width 1s, background-color 3s;
+}
+button:hover 
+{
+    width:300px;
+    background-color: purple;
+}

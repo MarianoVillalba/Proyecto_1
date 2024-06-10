@@ -1,0 +1,166 @@
+/* Estilo global para el HTML y el cuerpo del documento */
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #215F96, #8A2BE2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #f5f5dc;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos para el encabezado y pie de página */
+header, footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo para los enlaces de navegación */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para los encabezados */
+h1, h2 {
+    text-align: center;
+    color: #f5f5dc;
+}
+
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para el contenedor de formularios */
+#recuadro1 {
+    background-color: #ddd;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    -moz-animation-name: animacion1;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -moz-animation-play-state: paused;
+    -webkit-animation-name: animacion1;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: paused;
+    -o-animation-name: animacion1;
+    -o-animation-duration: 4s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: alternate;
+    -o-animation-play-state: paused;
+    transition: transform 0.3s ease;
+}
+
+#recuadro1:hover {
+    -moz-animation-play-state: running;
+    -webkit-animation-play-state: running;
+    -o-animation-play-state: running;
+    transform: translateY(-5px);
+}
+
+/* Estilo para los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación para los botones */
+@keyframes pulse {
+    0% {
+        background-color: #333;
+    }
+    100% {
+        background-color: #555;
+    }
+}
+
+button 
+{
+    display: flex;
+    width: 100px;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition:width 1s, background-color 3s;
+}
+button:hover 
+{
+    width:300px;
+    background-color: #E9967A;
+}
+
+/* Keyframes for form animation */
+@-moz-keyframes animacion1 {
+    from {
+        border-radius: 0px;
+        background-color: #ddd;
+    }
+    to {
+        border-radius: 40px;
+        background-color: #ff0;
+    }
+}
+
+@-webkit-keyframes animacion1 {
+    from {
+        border-radius: 0px;
+        background-color: #ddd;
+    }
+    to {
+        border-radius: 40px;
+        background-color: #8B008B;
+    }
+}
+
+@-o-keyframes animacion1 {
+    from {
+        border-radius: 0px;
+        background-color: #ddd;
+    }
+    to {
+        border-radius: 40px;
+        background-color: #8B008B;
+    }
+}
