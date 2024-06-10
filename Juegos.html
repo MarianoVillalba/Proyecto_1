@@ -1,72 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Juegos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Juegos</title>
+    <link rel="stylesheet" href="CSS/estilos_juegos.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
 </head>
 <body>
-<style>
-h1,h2 
-{
-    font-family:Verdana;
-    font-size:30px;
-    font-style:italic;
-    font-weight:bold;
-}
-body 
-{
-    background: linear-gradient(to bottom, #215F96, #8A2BE2); 
-    background-repeat: no-repeat; 
-}
-h2, p strong
-{
-  color:#f5f5dc;
-}
-nav
-{
-    color:white;background-color:#9c9c9c;
-}
-</style>
     <header>
         <nav>
             <a href="index.html">HOME</a> |
             <br>
-	        <a href="Novedades.html">Novedades</a> |
-	        <a href="Comentarios.html">Comentarios</a> |
-	        <a href="Contactos.html">Contactos</a> |
+            <a href="Juegos.html">Juegos</a> |
+            <a href="Novedades.html">Novedades</a> |
+            <a href="Comentarios.html">Recomendaciones</a> |
+            <a href="Contactos.html">Contactos</a> |
+            <a href="Inicio_sesion.html">Inicio de sesion</a> |
         </nav>
     </header>
-        <h2><strong>Juegos</strong> |</h2>
-        <main>
-        <section>
-        	<article>
-        		<h2>Valorant</h2>
-        			<center>
-        				<a href="https://playvalorant.com/es-mx/" target="blank">
-        					<img src="Imagenes/Valorant.jpg" alt="Valorant" width="400px">
-	        			</center>
-				        <p><strong> Es un juego de disparos en primera persona táctico y competitivo desarrollado por Riot Games. Ambientado en un futuro cercano, los jugadores eligen entre un elenco de agentes con habilidades únicas mientras participan en rondas de juego estratégicas en equipo. Con énfasis en la cooperación, la precisión y la toma de decisiones tácticas, Valorant ofrece una experiencia de juego intensa y emocionante donde cada movimiento cuenta en la batalla por la victoria. Para saber mas, haz click en la imagen</p></strong>
-	        	</article>
-	        	<article>
-	        		<h2>God of War Ragnarok</h2>
-	        			<center>
-	        				<a href="https://www.playstation.com/es-mx/games/god-of-war-ragnarok/" target="blank">
-	        					<img src="Imagenes/GOD.webp" align="centers" alt="Valorant" width="400px">
-	        			</center>
-				        <p><strong> Es una aclamada serie de videojuegos de acción y aventuras que sigue la historia de Kratos, un guerrero espartano en busca de venganza contra los dioses del Olimpo. Con una jugabilidad intensa y una narrativa épica, el juego combina combates brutales, puzles desafiantes y una mitología envolvente para ofrecer una experiencia inolvidable llena de acción y drama. Para saber mas, haz click en la imagen</p></strong>
-	        	</article>
-	        </section>
-	    </main>
-        <hr>
-        <footer>
-        	<nav>
-	            <a href="index.html">HOME</a> |
-	            <br>
-		        <a href="Novedades.html">Novedades</a> |
-		        <a href="Comentarios.html">Comentarios</a> |
-		        <a href="Contactos.html">Contactos</a> |
-        	</nav>
-        </footer>
+    <h2><strong>Juegos</strong></h2>
+    <main>
+            <label for="categoria-select"><strong>Elige una categoría:</strong></label>
+            <select id="categoria-select">
+                <option value="todos">Todos</option>
+                <option value="accion">Acción</option>
+                <option value="accion">Aventura</option>
+                <option value="accion">Misterio</option>
+                <option value="fps">Terror</option>
+            </select>
+        <section class="grid-container">
+            <article class="grid-item">
+                <h2>Valorant</h2>
+                <center>
+                    <a href="https://playvalorant.com/es-mx/" target="_blank">
+                        <img src="Imagenes/Valorant.jpg" alt="Valorant" width="400px">
+                    </a>
+                </center>
+                <p><strong>Es un juego de disparos en primera persona táctico y competitivo desarrollado por Riot Games. Ambientado en un futuro cercano, los jugadores eligen entre un elenco de agentes con habilidades únicas mientras participan en rondas de juego estratégicas en equipo. Con énfasis en la cooperación, la precisión y la toma de decisiones tácticas, Valorant ofrece una experiencia de juego intensa y emocionante donde cada movimiento cuenta en la batalla por la victoria. Para saber más, haz click en la imagen.</strong></p>
+            </article>
+            <article class="grid-item">
+                <h2>God of War Ragnarok</h2>
+                <center>
+                    <a href="https://www.playstation.com/es-mx/games/god-of-war-ragnarok/" target="_blank">
+                        <img src="Imagenes/GOD.webp" alt="God of War Ragnarok" width="400px">
+                    </a>
+                </center>
+                <p><strong>Es una aclamada serie de videojuegos de acción y aventuras que sigue la historia de Kratos, un guerrero espartano en busca de venganza contra los dioses del Olimpo. Con una jugabilidad intensa y una narrativa épica, el juego combina combates brutales, puzles desafiantes y una mitología envolvente para ofrecer una experiencia inolvidable llena de acción y drama. Para saber más, haz click en la imagen.
+                </strong></p>
+            </article>
+            <article class="grid-item">
+                <h2>Content warning</h2>
+                <center>
+                    <a href="https://store.steampowered.com/app/2881650/Content_Warning/" target="_blank">
+                        <img src="Imagenes/cw.webp" alt="Content warning" width="400px">
+                    </a>
+                </center>
+                <p><strong>Una advertencia de contenido (en inglés, content warning) es un aviso que se coloca antes de un texto, video u otro contenido para alertar a los usuarios sobre la presencia de material que podría ser perturbador o sensible para algunas personas., haz click en la imagen.</strong></p>
+            </article>
+            <article class="grid-item">
+                <h2>The Walking Dead</h2>
+                <center>
+                    <a href="https://store.steampowered.com/agecheck/app/207610/?l=spanish" target="_blank">
+                        <img src="Imagenes/twd.webp" alt="The Walking Dead" width="200px">
+                    </a>
+                </center>
+                <p><strong>El juego se centra en la narrativa y la elección del jugador, con decisiones que afectan la historia y las relaciones con otros personajes. El juego ha sido elogiado por su historia, sus personajes y su estilo artístico, y ha ganado numerosos premios, incluido el premio BAFTA al mejor juego de historia. Para saber más, haz click en la imagen.</strong></p>
+            </article>
+            <article class="grid-item">
+                <h2>Grand Theft Auto</h2>
+                <center>
+                    <a href="https://www.rockstargames.com/es/gta-v" target="_blank">
+                        <img src="Imagenes/gta.webp" alt="Grand Theft Auto" width="400px">
+                    </a>
+                </center>
+                <p><strong>GTA V es un juego de mundo abierto que permite a los jugadores explorar libremente el mundo de San Andreas a pie, en vehículo o en avión. El juego presenta una variedad de actividades, que incluyen misiones de historia, actividades secundarias, minijuegos y eventos aleatorios. Los jugadores también pueden participar en el modo multijugador en línea GTA Online, que permite a los jugadores crear y participar en sus propios modos de juego, o jugar misiones cooperativas y competitivas con otros jugadores. Para saber más, haz click en la imagen.</strong></p>
+            </article>
+            <article class="grid-item">
+                <h2>Minecraft</h2>
+                <center>
+                    <a href="https://www.minecraft.net/es-es" target="_blank">
+                        <img src="Imagenes/minecraft.webp" alt="Minecraft" width="300px">
+                    </a>
+                </center>
+                <p><strong> Es un videojuego de tipo sandbox ("caja de arena") en el que los jugadores exploran un mundo generado aleatoriamente, recolectan recursos, construyen estructuras, fabrican herramientas y combaten contra monstruos., haz click en la imagen.</strong></p>
+            </article>
+            <br><hr>
+            <article>
+                <h3>Comentarios</h3>
+                    <form action="index.html" method="POST">
+                        <input type="text" id="Username" name="Username" placeholder="Nombre de usuario" required> 
+                        <br>
+                        <input type="email" id="correo" name="correo" placeholder="Correo electrónico" autocomplete="off" required>
+                        <br>
+                        <textarea id="comentarios" name="comentarios" placeholder="Dejanos un comentario sobre algun juego" rows="5" cols="60"></textarea>
+                        <br>
+                        <button type="reset">
+                            Borrar<img src="Imagenes/papelera.png" alt="Borrar" width="10px">
+                        </button>
+                        <button type="submit">
+                            Enviar<img src="Imagenes/enviar.png" alt="Enviar" width="10px">
+                        </button>
+                    </form>
+            </article>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <nav>
+            <a href="index.html">HOME</a> |
+            <br>
+            <a href="Juegos.html">Juegos</a> |
+            <a href="Novedades.html">Novedades</a> |
+            <a href="Comentarios.html">Comentarios</a> |
+            <a href="Contactos.html">Contactos</a> |
+            <a href="Inicio_sesion.html">Inicio de sesion</a> |
+        </nav>
+    </footer>
 </body>
 </html>

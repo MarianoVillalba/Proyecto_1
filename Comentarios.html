@@ -4,62 +4,31 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Comentarios</title>
+	<link rel="stylesheet" href="CSS/estilos_comentarios.css" type="text/css">
 </head>
 <body>
-<style>
-h1,h2 
-{
-    font-family:Verdana;
-    font-size:30px;
-    font-style:italic;
-    font-weight:bold;
-}
-body 
-{
-    background: linear-gradient(to bottom, #215F96, #8A2BE2); 
-    background-repeat: no-repeat; 
-}
-nav
-{
-    color:white;background-color:#9c9c9c;
-}
-h2, strong
-{
-  color:#f5f5dc;
-}
-</style>
 	<header>
 		<nav>
 	        <a href="index.html">HOME</a> |
 	        <br>
-		    <a href="Novedades.html">Novedades</a> |
-		    <a href="Juegos.html">Juegos</a> |
-		    <a href="Contactos.html">Contactos</a> |
+	        <a href="Juegos.html">Juegos</a> |
+	        <a href="Novedades.html">Novedades</a> |
+	        <a href="Comentarios.html">Recomendaciones</a> |
+	        <a href="Contactos.html">Contactos</a> |
+	        <a href="Inicio_sesion.html">Inicio de sesion</a> |
 	    </nav>
 	</header>
 	<h2><strong>Comentarios</strong> |</h2>
 	<main>
 		<section>
 			<article>
-		       <h3>Dejanos unos comentarios</h3>
-		          	<form action="index.html" method="POST">
-		                <input type="number" id="telefono" name="telefono" placeholder="Número de teléfono"> 
-		                <br>
-		                <input type="email" id="correo" name="correo" placeholder="Correo electrónico" autocomplete="off">
-		                <br>
-		                <textarea id="comentarios" name="comentarios" placeholder="Deje un comentario" rows="5" cols="60"></textarea>
-		                <br>
-		                <button type="reset">
-		                    Borrar<img src="Imagenes/papelera.png" alt="Borrar" width="10px">
-		                </button>
-		                <button type="submit">
-		                    Enviar<img src="Imagenes/enviar.png" alt="Enviar" width="10px">
-		                </button>
-		            </form>
-		            <hr>
 		        <h3>Recomendaciones</h3>
 		            <form action="index.html" method="POST">
-		                <textarea id="comentarios" name="comentarios" placeholder="Dejanos una recomencion" rows="5" cols="60"></textarea>
+		       			<input type="text" id="Username" name="Username" placeholder="Nombre de usuario" required> 
+		                <br>
+		                <input type="email" id="correo" name="correo" placeholder="Correo electrónico" autocomplete="off" required>
+		                <br>
+		                <textarea id="comentarios" name="comentarios" placeholder="Dejanos una recomendacion" rows="5" cols="60"></textarea>
 		                <br>
 		                <button type="reset">
 		                    Borrar<img src="Imagenes/papelera.png" alt="Borrar" width="10px">
@@ -76,9 +45,11 @@ h2, strong
 	    <nav>
 		    <a href="index.html">HOME</a> |
 		    <br>
-			<a href="Novedades.html">Novedades</a> |
 			<a href="Juegos.html">Juegos</a> |
-			<a href="Contactos.html">Contactos</a> |
+	        <a href="Novedades.html">Novedades</a> |
+	        <a href="Comentarios.html">Comentarios</a> |
+	        <a href="Contactos.html">Contactos</a> |
+	        <a href="Inicio_sesion.html">Inicio de sesion</a> |
 	    </nav>
 	</footer>
 </body>

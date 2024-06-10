@@ -1,0 +1,114 @@
+/* Estilos básicos para la página */
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #215F96, #8A2BE2); 
+    background-repeat: no-repeat; 
+}
+
+header, footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a 
+{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+h2 
+{
+    text-align: center;
+    color:#f5f5dc;
+}
+
+main 
+{
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Estilos para la sección de categorías */
+.categorias 
+{
+    margin-bottom: 20px;
+}
+
+.categorias h3 
+{
+    margin-top: 0;
+}
+
+.categorias ul 
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+.categorias li 
+{
+    margin: 5px 0;
+}
+
+.categorias a 
+{
+    text-decoration: none;
+    color: #333;
+}
+/* Estilos para el contenedor de la cuadrícula */
+.grid-container 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Estilos para los artículos de la cuadrícula */
+.grid-item 
+{
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.grid-item h2 
+{
+    margin-top: 0;
+    color: #000000;
+}
+
+.grid-item img 
+{
+    max-width: 100%;
+    height: auto;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700
+
+.josefin-sans p 
+{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.grid-item p strong
+{
+
+    text-align: justify;
+    color: #000000;
+}
