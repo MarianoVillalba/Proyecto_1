@@ -1,66 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Contactos</title>
-	<link rel="stylesheet" href="CSS/estilos_contactos.css" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contactos</title>
+    <link rel="icon" type="image/png" href="Imagenes/Foto.png">
+    <link rel="stylesheet" href="CSS/estilos_contactos.css" type="text/css">
+    <link rel="stylesheet" href="CSS/estilos_comentarios.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
-	<nav>
-		<a href="index.html">HOME</a> |
-        <br>
-		<a href="Juegos.html">Juegos</a> |
-        <a href="Novedades.html">Novedades</a> |
-        <a href="Comentarios.html">Recomendaciones</a> |
-        <a href="Contactos.html">Contactos</a> |
-        <a href="Inicio_sesion.html">Inicio de sesion</a> |
-    </nav>
-	</header>
-	<h2><strong>Contactos</h2></strong> 
-	<main>
-		 <section>
-		 	<article>
-	            <p>Puede contactarme a través de los siguientes medios:</p>
-	                <a href="mailto:marianovillalba21@gmail.com" target="_blank">
-	                    <img src="Imagenes/correo.png" alt="Correo" width="70px">
-	                </a>
-	                <a href="https://api.whatsapp.com/send?phone=+54 9 3765 032269&text=¡Hola! ¿Cómo puedo ayudarte?" target="_blank">
-	                    <img src="Imagenes/warap.png" alt="WhatsApp" width="70px">
-	                </a>
-	                <a href="https://www.instagram.com/mariano__villalba/" target="_blank">
-	                    <img src="Imagenes/instagram.png" alt="Instagram" width="70px">
-                	</a>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="Juegos.html">Juegos</a> |
+            <a href="Novedades.html">Novedades</a> |
+            <a href="Comentarios.html">Recomendaciones</a> |
+            <a href="Contactos.html">Contactos</a> |
+            <a href="Inicio_sesion.html">Inicio de sesión</a> |
+        </nav>
+    </header>
+    <hr>
+    <h2><strong>Contactos</strong></h2>
+    <main>
+        <section>
+            <article class="grid-item">
+                <h2>Puede contactarme a través de los siguientes medios:</h2>
+                <a href="mailto:marianovillalba21@gmail.com" target="_blank">
+                    <img src="Imagenes/correo.png" alt="Correo" width="70px">
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=+5493765032269&text=¡Hola! ¿Cómo puedo ayudarte?" target="_blank">
+                    <img src="Imagenes/warap.png" alt="WhatsApp" width="70px">
+                </a>
+                <a href="https://www.instagram.com/mariano__villalba/" target="_blank">
+                    <img src="Imagenes/instagram.png" alt="Instagram" width="70px">
+                </a>
             </article>
-            <article>
-	            <h2>Soporte tecnico</h2>
-	            <form action="index.html" method="POST">
-	                <textarea id="comentarios" name="comentarios" placeholder="Deje un comentario al soporte tecnico" rows="5" cols="60"></textarea>
-	                <input type="text" id="Username" name="Username" placeholder="Nombre de usuario" required> 
-		                <br>
-		                <input type="email" id="correo" name="correo" placeholder="Correo electrónico" autocomplete="off" required>
-	                <br><br>
-	                <button type="reset">
-	                    Borrar<img src="Imagenes/papelera.png" alt="Borrar" width="10px">
-	                </button>
-	                <button type="submit">
-	                    Enviar<img src="Imagenes/enviar.png" alt="Enviar" width="10px">
-	                </button>
-	            </form>
+            <article class="grid-item">
+                <h2>Soporte técnico</h2>
+                <form action="index.html" method="POST">
+                    <input type="text" id="Username" name="Username" placeholder="Nombre de usuario" required> 
+                    <input type="email" id="correo" name="correo" placeholder="Correo electrónico" autocomplete="off" required>
+                    <textarea id="comentarios" name="comentarios" placeholder="Deje un comentario al soporte técnico" rows="5" cols="60"></textarea>
+                    <br>
+                    <button type="reset">
+                        Borrar <img src="Imagenes/papelera.png" alt="Borrar" width="10px">
+                    </button>
+                    <button type="submit">
+                        Enviar <img src="Imagenes/enviar.png" alt="Enviar" width="10px">
+                    </button>
+                </form>
             </article>
         </section>
-	</main>
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="Juegos.html">Juegos</a> |
+            <a href="Novedades.html">Novedades</a> |
+            <a href="Comentarios.html">Recomendaciones</a> |
+            <a href="Contactos.html">Contactos</a> |
+            <a href="Inicio_sesion.html">Inicio de sesión</a> |
+        </nav>
+    </footer>
 </body>
-<footer>
-	<nav>
-		<a href="index.html">HOME</a> |
-        <br>
-		<a href="Juegos.html">Juegos</a> |
-        <a href="Novedades.html">Novedades</a> |
-        <a href="Comentarios.html">Comentarios</a> |
-        <a href="Contactos.html">Contactos</a> |
-        <a href="Inicio_sesion.html">Inicio de sesion</a> |
-    </nav>
-</footer>
 </html>

@@ -48,9 +48,12 @@ h1, h2
     text-shadow: -5px -5px 5px #aaa;
     text-align: center;
     color: #f5f5dc;
-    font-family: "Tiny5", sans-serif;
-    font-weight: 400;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
     font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 main 
@@ -118,25 +121,31 @@ select
  {
     transform: translateY(-5px); /* Agregar efecto de elevación al pasar el cursor sobre el artículo */
     width:300px;
-    background-color:#007b7d;
+    background-color:#8B008B;
 }
 
 .grid-item h2
  {
     margin-top: 0;
     color: #000;
-    font-family: "Tiny5", sans-serif;
-    font-weight: 400;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
     font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 .grid-item p
  {
-    font-family: "Tiny5", sans-serif;
-    font-weight: 400;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
     font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     text-align: justify;
-    color: #333; /* Cambiar el color del texto para hacerlo más legible */
+    color: #f5f5dc; /* Cambiar el color del texto para hacerlo más legible */
 }
 
 .grid-item img 
@@ -186,5 +195,5 @@ button
 button:hover 
 {
     width:300px;
-    background-color: purple;
+    background-color: #E9967A;
 }

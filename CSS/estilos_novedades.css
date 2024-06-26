@@ -6,16 +6,8 @@ html, body {
     height: 100%;
     background: linear-gradient(to bottom, #215F96, #8A2BE2);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     color: #f5f5dc;
 }
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
 /* Estilos para el encabezado y pie de página */
 header, footer {
     width: 100%;
@@ -39,8 +31,15 @@ nav a:hover {
 
 /* Estilo para los encabezados */
 h1, h2 {
+    text-shadow: -5px -5px 5px #aaa;
     text-align: center;
     color: #f5f5dc;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 main {

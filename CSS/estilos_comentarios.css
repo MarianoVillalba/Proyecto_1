@@ -9,7 +9,8 @@ html, body
     color: #f5f5dc;
 }
 
-body {
+body 
+{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -32,9 +33,18 @@ nav a {
 }
 
 /* Estilo para los encabezados */
-h2, h3 {
+h2, h3 
+{
     text-align: center;
-    color: #f5f5dc;
+    margin-top: 0;
+    text-shadow: -5px -5px 5px #aaa;
+    color: white;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 main {
@@ -65,9 +75,30 @@ article {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
+/* Estilos para los artículos de la cuadrícula */
+.grid-item
+ {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    transition-property: width, background-color;
+    transition-duration: 1s, 1s;
+    transition-timing-function: linear, linear;
+    transition-delay: 0s, 0s;
 
+}
+
+.grid-item:hover
+ {
+    background-color:#8B008B;
+}
 /* Estilo para los formularios */
-form {
+form 
+{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,6 +118,7 @@ form input, form textarea
 button 
 {
     display: flex;
+    width: 100px;
     align-items: center;
     padding: 10px 20px;
     margin: 10px;
@@ -95,18 +127,19 @@ button
     background-color: #333;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition:width 1s, background-color 3s;
 }
-
+button:hover 
+{
+    width:300px;
+    background-color: #E9967A;
+}
 button img 
 {
     margin-left: 10px;
 }
 
-button:hover 
-{
-    background-color: #555;
-}
+
 
 hr {
     width: 100%;
